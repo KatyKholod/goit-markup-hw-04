@@ -98,6 +98,7 @@ section {}
 */
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -181,7 +182,14 @@ section {}
   |============================
 */
 .hero {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--color-bgd);
+    background-image: url(../images/hero/dark.png), url(../images/hero/office.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -257,6 +265,16 @@ section {}
     color: var(--color-slate);
 }
 
+.icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+}
+
 /**
   |============================
   | Works styles
@@ -304,6 +322,7 @@ section {}
 
 .team-item {
     background-color: var(--color-white);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -313,7 +332,9 @@ section {}
 
 .team-img {}
 
-.team-desc {}
+.team-desc {
+    margin-bottom: 8px;
+}
 
 .team-name {
     padding: 32px 16px;
@@ -321,13 +342,91 @@ section {}
     border-radius: 0px 0px 4px 4px;
 }
 
+/* Social icons */
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.socials-item {}
+
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-iris);
+}
+
+.social-icons {
+    fill: var(--color-cloud);
+}
+
+.team-item:hover .socials-link,
+.team-item:focus .socials-link {
+    background-color: var(--color-ocean);
+}
+
+/**
+  |============================
+  | Customers styles
+  |============================
+*/
+
+.customers {
+    padding: 120px 0;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+}
+
+.customers-icons {
+    fill: var(--color-light-slate);
+}
+
+.customers-link:hover .customers-icons,
+.customers-link:focus .customers-icons {
+    fill: var(--color-ocean);
+
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border-color: var(--color-ocean);
+}
 
 /**
   |============================
   | Footer styles
   |============================
 */
-.footer-container {}
+.footer-container {
+    display: flex;
+    align-items: baseline;
+
+}
 
 .footer {
     background-color: var(--color-bgd);
@@ -356,6 +455,44 @@ section {}
     color: var(--color-cloud);
     max-width: 264px;
 }
+
+.media-container {
+    display: inline-block;
+}
+
+.media-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    padding-bottom: 16px;
+}
+
+.media-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Media icons */
+
+
+.media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-iris);
+}
+
+.media-link:hover,
+.media-link:focus {
+    background-color: var(--color-green);
+}
+
 
 
 /**
@@ -405,6 +542,7 @@ section {}
     background-color: var(--color-ocean);
     color: var(--color-white);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -415,21 +553,20 @@ section {}
 }
 
 .portfolio-project {
+    padding: 32px 16px;
     border-top: none;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
 }
 
-.portfolio-project {
-    padding: 32px 16px;
-}
-
 .portfolio-subtitle {
     margin-bottom: 8px;
 }
 
-.portfollio-item {}
+.portfollio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .portfolio-img {}
 
