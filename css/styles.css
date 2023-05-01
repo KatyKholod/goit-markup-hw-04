@@ -187,7 +187,7 @@ section {}
     margin-right: auto;
     background-color: var(--color-bgd);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/hero/office.png);
+            rgba(46, 47, 66, 0.7)), url(../images/hero/img17.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -370,10 +370,7 @@ section {}
     fill: var(--color-cloud);
 }
 
-.team-item:hover .socials-link {
-    background-color: var(--color-ocean);
-}
-
+.team-item:hover .socials-link,
 .team-item:focus .socials-link {
     background-color: var(--color-ocean);
 }
@@ -389,7 +386,7 @@ section {}
 }
 
 .customers-title {
-    line-height: 1.11;
+    line-height: 1.1;
 }
 
 .customers-list {
@@ -444,13 +441,13 @@ section {}
     padding-bottom: 100px;
 }
 
-.logo-container {
-    margin-right: 120px;
-}
-
 .footer-container {
     display: flex;
     align-items: baseline;
+}
+
+.logo-container {
+    margin-right: 120px;
 }
 
 .footer-logo {
