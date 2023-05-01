@@ -370,8 +370,11 @@ section {}
     fill: var(--color-cloud);
 }
 
-.team-item:hover .socials-link,
-.team-item:focus .socials-link {
+.team-item:hover .socials-link {
+    background-color: var(--color-ocean);
+}
+
+.socials-link:focus {
     background-color: var(--color-ocean);
 }
 
