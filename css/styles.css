@@ -270,13 +270,15 @@ section {}
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 264px;
     margin-bottom: 8px;
     height: 112px;
     background: #F4F4FD;
     border-radius: 4px;
 }
 
+/*  
+
+     */
 /**
   |============================
   | Works styles
@@ -370,7 +372,7 @@ section {}
     fill: var(--color-cloud);
 }
 
-.team-item:hover .socials-link {
+.socials-link:hover {
     background-color: var(--color-ocean);
 }
 
@@ -437,7 +439,6 @@ section {}
   | Footer styles
   |============================
 */
-
 .footer {
     background-color: var(--color-bgd);
     padding-top: 100px;
@@ -450,6 +451,7 @@ section {}
 }
 
 .logo-container {
+    display: inline-block;
     margin-right: 120px;
 }
 
@@ -494,7 +496,6 @@ section {}
     gap: 16px;
 }
 
-
 /* Media icons */
 
 
@@ -516,8 +517,6 @@ section {}
 .media-link:focus {
     background-color: var(--color-green);
 }
-
-
 
 /**
   |============================
